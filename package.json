@@ -1,6 +1,6 @@
 {
   "name": "complexity-report",
-  "version": "2.0.0-alpha",
+  "version": "2.0.0-alpha2",
   "description": "Software complexity analysis for JavaScript projects",
   "homepage": "https://github.com/jared-stilwell/complexity-report",
   "bugs": "https://github.com/jared-stilwell/complexity-report/issues",
@@ -35,7 +35,7 @@
     "async": "^1.4.2",
     "check-types": "^4.2.0",
     "commander": "^2.9.0",
-    "escomplex": "2.0.0-alpha",
+    "escomplex": "https://github.com/DBCDK/escomplex/archive/2.0.0-alpha2.tar.gz",
     "esprima": "^2.7.2"
   },
   "devDependencies": {

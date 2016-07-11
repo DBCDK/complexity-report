@@ -62,6 +62,7 @@ function parseCommandLine () {
         option('-t, --trycatch', 'treat catch clauses as source of cyclomatic complexity').
         option('-n, --newmi', 'use the Microsoft-variant maintainability index (scale of 0 to 100)').
         option('-Q, --nocoresize', 'don\'t calculate core size or visibility matrix').
+        option('-N --future', 'Parse the code with ES2015').
         parse(process.argv);
 
     config = readConfig(cli.config);
@@ -79,7 +80,8 @@ function parseCommandLine () {
         trycatch: cli.trycatch || false,
         newmi: cli.newmi || false,
         ignoreErrors: cli.ignoreerrors || false,
-        noCoreSize: cli.nocoresize || false
+        noCoreSize: cli.nocoresize || false,
+        future: cli.future || false
     };
 
     if (check.nonEmptyString(cli.format) === false) {
